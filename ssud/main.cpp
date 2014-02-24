@@ -9,7 +9,7 @@
 #include <QTranslator>
 #include <QLocale>
 #include <QLibraryInfo>
-#include <connman-qt5/connmannetworkproxyfactory.h>
+// #include <connman-qt5/connmannetworkproxyfactory.h>
 #include "ssud.h"
 
 int main(int argc, char** argv){
@@ -23,7 +23,7 @@ int main(int argc, char** argv){
                     QLibraryInfo::location(QLibraryInfo::TranslationsPath));
   app.installTranslator(&qtTranslator);
 
-  QNetworkProxyFactory::setApplicationProxyFactory(new ConnmanNetworkProxyFactory);
+  //  QNetworkProxyFactory::setApplicationProxyFactory(new ConnmanNetworkProxyFactory);
 
   Ssud ssud;
 
