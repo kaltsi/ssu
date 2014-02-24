@@ -16,7 +16,7 @@ BuildRequires: pkgconfig(Qt5SystemInfo)
 BuildRequires: pkgconfig(libzypp)
 BuildRequires: pkgconfig(libsystemd-journal)
 BuildRequires: pkgconfig(libshadowutils)
-BuildRequires: pkgconfig(connman-qt5)
+#zuildRequires: pkgconfig(connman-qt5)
 BuildRequires: oneshot
 BuildRequires: doxygen
 Requires(pre): shadow-utils

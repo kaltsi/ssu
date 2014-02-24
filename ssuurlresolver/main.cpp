@@ -10,7 +10,7 @@
 #include <QLocale>
 #include <QLibraryInfo>
 #include <QTimer>
-#include <connman-qt5/connmannetworkproxyfactory.h>
+// #include <connman-qt5/connmannetworkproxyfactory.h>
 #include "ssuurlresolver.h"
 
 int main(int argc, char** argv){
@@ -24,7 +24,7 @@ int main(int argc, char** argv){
                     QLibraryInfo::location(QLibraryInfo::TranslationsPath));
   app.installTranslator(&qtTranslator);
 
-  QNetworkProxyFactory::setApplicationProxyFactory(new ConnmanNetworkProxyFactory);
+  //  QNetworkProxyFactory::setApplicationProxyFactory(new ConnmanNetworkProxyFactory);
 
   SsuUrlResolver mw;
   QTimer::singleShot(0, &mw, SLOT(run()));
